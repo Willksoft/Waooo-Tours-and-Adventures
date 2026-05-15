@@ -34,7 +34,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="hero" className="relative w-full h-[565px] flex items-center overflow-hidden">
+    <section id="hero" className="relative w-full min-h-[600px] md:min-h-[565px] h-auto flex items-center overflow-hidden py-24 md:py-0">
       {/* Background Video with Left Gradient */}
       <div className="absolute inset-0 z-0">
         <video
