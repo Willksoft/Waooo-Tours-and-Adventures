@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00AEEF;
+  --color-primary-dark: #003B73;
+  --color-turquoise: #00FFEF;
+  --color-accent: #FF7A00;
+  --color-highlight: #FFD43B;
+  --color-green-tropical: #19B56B;
+  --color-sand: #F0FBFA;
+  --color-dark: #0F172A;
+
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-decorative: "Caveat", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-sand);
+  color: var(--color-dark);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
