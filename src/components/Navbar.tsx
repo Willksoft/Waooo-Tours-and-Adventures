@@ -36,9 +36,10 @@ export default function Navbar() {
           <div className="flex justify-between items-center">
             {/* Logo area */}
             <div className="flex-shrink-0 flex items-center">
-              <a href="#" className={`font-heading font-bold text-3xl tracking-tighter text-[#0E3F35]`}>
-                WAOOO
-                <span className="text-white text-lg align-top ml-1">★</span>
+              <a href="#" className="flex flex-col items-start justify-center">
+                <span className="font-heading font-black text-3xl tracking-tighter text-[#EA580C] leading-none mb-1">WAOOO<span className="text-xl align-top ml-0.5">★</span></span>
+                <span className="text-[0.6rem] font-bold text-black uppercase tracking-wider leading-none mb-0.5">Tours and Adventures</span>
+                <span className="text-[0.6rem] font-bold text-black uppercase tracking-wider leading-none">Punta Cana</span>
               </a>
             </div>
 
@@ -94,11 +95,13 @@ export default function Navbar() {
               transition={{ type: 'tween', duration: 0.3 }}
               className="fixed inset-y-0 right-0 max-w-sm w-full bg-white z-50 flex flex-col p-6 shadow-2xl"
             >
-              <div className="flex justify-between items-center mb-8">
-                <span className="font-heading font-bold text-2xl text-primary-dark tracking-tighter">
-                  WAOOO<span className="text-accent">★</span>
-                </span>
-                <button onClick={() => setIsOpen(false)} className="text-gray-500 hover:text-gray-800">
+              <div className="flex justify-between items-start mb-8">
+                <a href="#" className="flex flex-col items-start justify-center" onClick={() => setIsOpen(false)}>
+                  <span className="font-heading font-black text-3xl tracking-tighter text-[#EA580C] leading-none mb-1">WAOOO<span className="text-xl align-top ml-0.5">★</span></span>
+                  <span className="text-[0.6rem] font-bold text-black uppercase tracking-wider leading-none mb-0.5">Tours and Adventures</span>
+                  <span className="text-[0.6rem] font-bold text-black uppercase tracking-wider leading-none">Punta Cana</span>
+                </a>
+                <button onClick={() => setIsOpen(false)} className="text-gray-500 hover:text-gray-800 -mt-1 -mr-1">
                   <XMarkIcon className="w-8 h-8" />
                 </button>
               </div>

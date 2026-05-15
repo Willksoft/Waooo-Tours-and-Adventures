@@ -13,9 +13,15 @@ export default function Footer() {
       >
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
-            <span className="font-heading font-bold text-3xl tracking-tighter block mb-4">
-              WAOOO<span className="text-accent">★</span>
-            </span>
+            <div className="mb-6">
+              <a href="#" className="flex flex-col items-start justify-center">
+                <span className="font-heading font-black text-4xl tracking-tighter text-[#EA580C] leading-none mb-1">WAOOO<span className="text-2xl align-top ml-0.5">★</span></span>
+                <div className="bg-white/90 px-1.5 py-1 rounded-sm flex flex-col items-start gap-1">
+                  <span className="text-[0.65rem] font-bold text-black uppercase tracking-wider leading-none">Tours and Adventures</span>
+                  <span className="text-[0.65rem] font-bold text-black uppercase tracking-wider leading-none">Punta Cana</span>
+                </div>
+              </a>
+            </div>
             <p className="text-gray-400 max-w-sm mb-6">
               Tours, aventuras y experiencias inolvidables en el Caribe. Tu viaje a Isla Saona empieza aquí.
             </p>
